@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --c-bg: #fff7e2;  /* pastel near-white */
+  --c-bg: #F9FAFB;  /* pastel near-white */
   --c-surface: #ffffff;      /* cards / navbar */
   --c-primary: #9ab7d6;      /* pastel blue */
   --c-secondary: #f9c5d1;    /* pastel pink */
@@ -43,6 +43,7 @@
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
 }
+
 [data-theme='dark'] {
   --c-bg: #0f172a;  /* slate‑900 */
   --c-surface: #1e293b;      /* slate‑800 */
@@ -127,6 +128,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+  
   body {
     @apply bg-background text-foreground;
   }

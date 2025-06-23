@@ -1,5 +1,6 @@
+import Features from "@/app/components/moleculas/Features";
 import { SectionIds } from "@/app/constants/config";
-import { Hero } from "./components/moleculas/Hero";
+import Hero from "./components/moleculas/Hero";
 import { Navbar } from "./components/moleculas/ui/Navbar";
 
 export default function Main() {
@@ -22,6 +23,7 @@ export default function Main() {
         className="min-h-screen snap-start flex items-center justify-center"
       >
         {/* TODO: FeaturesSection */}
+        <Features />
       </section>
       <section
         id={SectionIds.SHOWCASE}
