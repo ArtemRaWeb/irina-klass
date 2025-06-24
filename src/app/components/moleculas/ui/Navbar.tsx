@@ -5,7 +5,7 @@ import { NAV_ITEMS, SectionIds } from "@/app/constants/config";
 import Image from "next/image";
 import { useCallback } from "react";
 
-export function Navbar() {
+export default function Navbar() {
   const handleScroll = useCallback((id: SectionIds) => {
     const el = document.getElementById(id);
     el?.scrollIntoView({ behavior: "smooth" });

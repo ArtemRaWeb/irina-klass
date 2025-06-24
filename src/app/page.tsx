@@ -1,15 +1,14 @@
 import Features from "@/app/components/moleculas/Features";
+import Hero from "@/app/components/moleculas/Hero";
+import Showcase from "@/app/components/moleculas/Showcase";
+import Navbar from "@/app/components/moleculas/ui/Navbar";
 import { SectionIds } from "@/app/constants/config";
-import Hero from "./components/moleculas/Hero";
-import { Navbar } from "./components/moleculas/ui/Navbar";
 
 export default function Main() {
   return (
     <main className="snap-y snap-mandatory h-screen overflow-y-scroll bg-[var(--c-bg)]">
-      {/* Navbar is fixed */}
       <Navbar />
 
-      {/* Sections */}
       <section
         id={SectionIds.HERO}
         className="min-h-screen snap-start flex items-center justify-center px-4"
@@ -17,19 +16,17 @@ export default function Main() {
         <Hero />
       </section>
 
-      {/* Placeholder sections (replace later) */}
       <section
         id={SectionIds.FEATURES}
         className="min-h-screen snap-start flex items-center justify-center"
       >
-        {/* TODO: FeaturesSection */}
         <Features />
       </section>
       <section
         id={SectionIds.SHOWCASE}
         className="min-h-screen snap-start flex items-center justify-center"
       >
-        {/* TODO: ShowcaseSection */}
+        <Showcase />
       </section>
       <section
         id={SectionIds.TESTIMONIALS}
