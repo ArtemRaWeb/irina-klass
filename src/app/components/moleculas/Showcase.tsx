@@ -52,7 +52,7 @@ export default function ShowcaseSection() {
       id="showcase"
       className="min-h-screen snap-start flex items-center justify-center bg-[var(--c-bg)] px-4"
     >
-      <div ref={ref} className="mx-auto w-full max-w-6xl">
+      <div ref={ref} className="mx-auto w-full">
         <h2 className="text-center text-3xl md:text-4xl font-bold text-[var(--c-primary)] mb-12">
           Коротко о результатах
         </h2>

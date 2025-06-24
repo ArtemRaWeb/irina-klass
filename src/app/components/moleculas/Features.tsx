@@ -43,7 +43,7 @@ export default function FeaturesSection() {
       id="features"
       className="min-h-screen snap-start flex items-center justify-center bg-[var(--c-bg)] px-4"
     >
-      <div className="mx-auto max-w-6xl w-full">
+      <div className="mx-auto w-full">
         <h2 className="text-center text-3xl md:text-4xl font-bold text-[var(--c-primary)] mb-12">
           Почему выбирают мои занятия
         </h2>
