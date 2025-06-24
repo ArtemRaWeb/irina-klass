@@ -14,12 +14,28 @@ export function ThemeToggler() {
     <button
       aria-label="Toggle theme"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="rounded-full p-2 transition hover:bg-[var(--c-secondary)]"
+      className="
+        group rounded-full p-2 cursor-pointer
+        transition-colors duration-200
+        hover:bg-[var(--c-accent)]
+      "
     >
       {theme === "light" ? (
-        <Moon className="h-5 w-5" />
+        <Moon
+          className="
+            h-5 w-5 text-[var(--c-text)]
+            transition-colors duration-200
+            group-hover:text-white
+          "
+        />
       ) : (
-        <Sun className="h-5 w-5" />
+        <Sun
+          className="
+            h-5 w-5 text-[var(--c-text)]
+            transition-colors duration-200
+            group-hover:text-white
+          "
+        />
       )}
     </button>
   );

@@ -4,11 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --c-bg: #F9FAFB;  /* pastel near-white */
-  --c-surface: #ffffff;      /* cards / navbar */
-  --c-primary: #9ab7d6;      /* pastel blue */
-  --c-secondary: #f9c5d1;    /* pastel pink */
-  --c-text: #1f2937;/* slate‑900 */
+  --c-bg:        #F9FAFB;
+  --c-surface:   #FFFFFF;
+  --c-primary:   #9ab7d6;   /* основной голубой */
+  --c-accent:    #6c92b8;   /* ⬅ новый акцент / hover */
+  --c-text:      #1f2937;
   
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -45,11 +45,11 @@
 }
 
 [data-theme='dark'] {
-  --c-bg: #0f172a;  /* slate‑900 */
-  --c-surface: #1e293b;      /* slate‑800 */
-  --c-primary: #7ea3c9;      /* muted blue */
-  --c-secondary: #81465d;    /* muted pink */
-  --c-text: #f1f5f9;/* slate‑50 */
+  --c-bg:        #0f172a;
+  --c-surface:   #1e293b;
+  --c-primary:   #7ea3c9;
+  --c-accent:    #aac4e0;   /* ⬅ светлый акцент */
+  --c-text:      #f1f5f9;
 }
 
 @theme inline {

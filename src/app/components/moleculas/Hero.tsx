@@ -47,7 +47,13 @@ export default function Hero() {
       <motion.button
         variants={buttonVariants}
         onClick={handleClick}
-        className="bg-[var(--c-primary)] hover:bg-[var(--c-secondary)]/90 mt-6 rounded-full px-8 py-3 text-white font-medium shadow-md hover:shadow-lg transition"
+        className="
+          mt-6 rounded-full px-8 py-3 font-medium text-white
+          bg-[var(--c-primary)]
+          hover:bg-[var(--c-accent)]/90
+          hover:shadow-[0_4px_16px_0_var(--c-accent)/40] duration-200
+          cursor-pointer
+        "
         type="button"
       >
         Записаться на бесплатное занятие
